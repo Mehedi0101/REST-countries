@@ -3,7 +3,7 @@ import { useState } from "react";
 import Country from "./Country";
 import './countries.css'
 
-const Countries = () => {
+const Countries = ({traveledCountries,setTraveledCountries}) => {
     const [countryList, setCountryList] = useState([]);
 
     useEffect( () => {
@@ -15,7 +15,7 @@ const Countries = () => {
     return (
         <div className="countries">
             {
-                countryList.map( country => <Country key={country?.ccn3} country={country}></Country>)
+                countryList.map( country => <Country key={country?.ccn3} country={country} traveledCountries={traveledCountries} setTraveledCountries={setTraveledCountries}></Country>)
             }
         </div>
     );

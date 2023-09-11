@@ -9,6 +9,17 @@
     align-items: center;
 }
 
+.country-container-active{
+    background-color: rgb(255, 199, 125);
+    border: 2px solid salmon;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .name, .img-container, .capital, .population, .region{
     margin: 5px 0;
 }
@@ -32,6 +43,17 @@
     border-radius: 5px;
     font-weight: bold;
     background-color: salmon;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-active{
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(255, 41, 18);
     padding: 10px 15px;
     color: white;
     cursor: pointer;

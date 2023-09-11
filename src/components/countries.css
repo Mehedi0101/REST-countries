@@ -3,3 +3,18 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+
+/* media query */
+/* tablet */
+@media screen and (max-width: 768px) {
+    .countries{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* phone */
+@media screen and (max-width: 425px) {
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
